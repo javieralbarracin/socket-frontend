@@ -3,11 +3,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
 import { MensajesComponent } from './pages/mensajes/mensajes.component';
 import { UsuarioGuardService } from './guards/usuario-guard.service';
+import { HomeComponent } from './pages/home/home.component';
+import { GraficaComponent } from './pages/grafica/grafica.component';
 
 const routes: Routes = [
     { path: '', component: LoginComponent },
     { path: 'login', component: LoginComponent },
+    { path: 'home', component: HomeComponent, canActivate:[ UsuarioGuardService ] },
     { path: 'mensajes', component: MensajesComponent, canActivate:[ UsuarioGuardService ] },
+    { path: 'graficas', component: GraficaComponent, canActivate:[ UsuarioGuardService ] },
     { path: '**', redirectTo:'login', pathMatch:'full' },
 ];
 

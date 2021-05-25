@@ -13,13 +13,15 @@ export class AppComponent implements OnInit{
    *
    */
   constructor(
-    private webSocket: WebsocketService,
+    public webSocket: WebsocketService,
     public chatService: ChatService
   ) {}
  
     ngOnInit(){
       this.chatService.getMenssagePrivate().subscribe(resp=>{
-          console.log('app-c -->',resp)
+          console.log('app c -->',resp)
       })
+
+      //console.log('app c',this.webSocket.obtenerUsuario())
     }
 }

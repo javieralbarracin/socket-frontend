@@ -1,5 +1,5 @@
-<!-- <h2>Socket - Angular</h2>
-<hr>
-<app-chat></app-chat> -->
+<ng-container *ngIf="webSocket.obtenerUsuario()">
+    <app-navbar></app-navbar>
+</ng-container>
 <router-outlet></router-outlet>
 <app-footer></app-footer>

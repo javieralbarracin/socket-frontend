@@ -13,6 +13,12 @@ import { ListasUsuariosComponent } from './components/listas-usuarios/listas-usu
 import { LoginComponent } from './pages/login/login.component';
 import { MensajesComponent } from './pages/mensajes/mensajes.component';
 
+import { ChartsModule } from 'ng2-charts';
+// import { GraficaComponent } from './components/grafica/grafica.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeComponent } from './pages/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { GraficaComponent } from './pages/grafica/grafica.component';
 const config: SocketIoConfig = { url: environment.wsUrl , options: {} };
 
 @NgModule({
@@ -22,13 +28,17 @@ const config: SocketIoConfig = { url: environment.wsUrl , options: {} };
     ChatComponent,
     ListasUsuariosComponent,
     LoginComponent,
-    MensajesComponent
+    MensajesComponent,
+    GraficaComponent,
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     SocketIoModule.forRoot(config),
     FormsModule,
-    
+    ChartsModule,
     AppRoutingModule
   ],
   providers: [],

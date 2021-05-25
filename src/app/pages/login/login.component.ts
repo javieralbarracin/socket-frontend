@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
       return;
     }
     this.wsService.loginWS(this.nombre).then( ()=>{
-      this.router.navigateByUrl('/mensajes')
+      this.router.navigateByUrl('/home')
     });
   }
 }

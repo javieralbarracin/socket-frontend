@@ -56,7 +56,7 @@ export class WebsocketService {
 
   logoutWS(){
     this.usuario = null;
-    localStorage.removeItem('usuario');
+    localStorage.removeItem('user');
     const payload ={ nombre:'sin-nombre' }
     this.emitir('configurar-usuario',payload, ()=>{});
     this.router.navigateByUrl('');
@@ -65,9 +65,11 @@ export class WebsocketService {
   obtenerUsuario(){
     return this.usuario;
   }
+
   guardarStorage(){
     localStorage.setItem('user', JSON.stringify(this.usuario));
   }
+
   cargarStorage(){
     let userStorage =localStorage.getItem('user');
     if(userStorage){

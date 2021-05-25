@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Dependencies
+
+* npm i ngx-socket-io
+* npm install chart.js@2.9.3 --save (esta version tiene compatibilidad con angular 11+)
+* npm install ng2-charts@2.2.3 --save (esta version tiene compatibilidad con angular 11+)
