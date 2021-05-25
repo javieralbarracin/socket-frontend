@@ -1,1 +1,11 @@
-<p>listas-usuarios works!</p>
+<h5>Usuarios conectados</h5>
+<hr>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let usuario of usuariosActivosObs | async">
+        {{usuario.nombre}},
+        <span class="badge bg-primary"> {{ usuario.sala }}</span>
+        <br>
+        <span class="badge bg-info">{{ usuario.id }}</span>
+    </li>
+</ul>
+
