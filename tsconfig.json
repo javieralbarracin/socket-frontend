@@ -4,7 +4,8 @@
   "compilerOptions": {
     "paths": {
       "rxjs": ["node_modules/rxjs"],
-      "@env/*": ["/environments/*"]
+      "@env/*": ["environments/*"],
+      "@pages/*": ["app/pages/*"]
     },
     "baseUrl": "./src",
     "outDir": "./dist/out-tsc",

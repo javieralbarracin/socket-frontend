@@ -19,6 +19,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GraficaComponent } from './pages/grafica/grafica.component';
+import { EncuestasComponent } from './pages/encuestas/encuestas.component';
+import { MapaComponent } from './pages/mapa/mapa.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+
 const config: SocketIoConfig = { url: environment.wsUrl , options: {} };
 
 @NgModule({
@@ -31,7 +35,10 @@ const config: SocketIoConfig = { url: environment.wsUrl , options: {} };
     MensajesComponent,
     GraficaComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    EncuestasComponent,
+    MapaComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

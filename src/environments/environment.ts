@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   wsUrl:'http://localhost:5000',
+  tokenMapBox: 'pk.eyJ1IjoiamF2aWFsYmEiLCJhIjoiY2twNGx3azVyMGFlODJ3a3Y3d3R5OHFjaCJ9.qw_in57G4DBRXt--Ih1LcA'
 };
 
 /*
