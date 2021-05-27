@@ -8,6 +8,7 @@ import { GraficaComponent } from './pages/grafica/grafica.component';
 import { EncuestasComponent } from './pages/encuestas/encuestas.component';
 import { MapaComponent } from './pages/mapa/mapa.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { GoogleMapsComponent } from './pages/google-maps/google-maps.component';
 
 const routes: Routes = [
     { path: '', redirectTo:'login', pathMatch:'full' },
@@ -17,6 +18,7 @@ const routes: Routes = [
     { path: 'graficas', component: GraficaComponent, canActivate:[ UsuarioGuardService ] },
     { path: 'encuestas', component: EncuestasComponent, canActivate:[ UsuarioGuardService ] },
     { path: 'mapa', component: MapaComponent, canActivate:[ UsuarioGuardService ] },
+    { path: 'google-maps', component: GoogleMapsComponent, canActivate:[ UsuarioGuardService ] },
     { path: '**', component: NotFoundComponent },
 ];
 

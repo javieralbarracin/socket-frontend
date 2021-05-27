@@ -34,3 +34,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * register your account mapbox: https://www.mapbox.com/
 * npm install mapbox-gl --save
 * npm install --save-dev @types/mapbox-gl (para tener el tipado de typescript en la libreria de mapbox)
+* npm i @types/googlemaps --save-dev

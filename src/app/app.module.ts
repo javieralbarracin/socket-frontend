@@ -22,6 +22,7 @@ import { GraficaComponent } from './pages/grafica/grafica.component';
 import { EncuestasComponent } from './pages/encuestas/encuestas.component';
 import { MapaComponent } from './pages/mapa/mapa.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { GoogleMapsComponent } from './pages/google-maps/google-maps.component';
 
 const config: SocketIoConfig = { url: environment.wsUrl , options: {} };
 
@@ -38,7 +39,8 @@ const config: SocketIoConfig = { url: environment.wsUrl , options: {} };
     HomeComponent,
     EncuestasComponent,
     MapaComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    GoogleMapsComponent
   ],
   imports: [
     BrowserModule,
